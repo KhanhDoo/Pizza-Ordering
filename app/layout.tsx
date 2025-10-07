@@ -21,17 +21,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={roboto.className}>
-        <main className="max-w-4xl mx-auto p-4">
-          <AppProvider>
-            <Header />
-            {children}
-            <footer className='border-t p-8 text-center text-gray-500'>
-              &copy; 2024 Food Ordering App. All rights reserved.
-            </footer>
-          </AppProvider>
-        </main>          
+      <body className={roboto.className}>
+        <AppProvider>
+          <main className="max-w-4xl mx-auto p-4">
+              <Header />
+              {children}
+              <footer className='border-t p-8 text-center text-gray-500'>
+                &copy; 2024 Food Ordering App. All rights reserved.
+              </footer>
+          </main>          
+        </AppProvider>
       </body>
     </html>
   );
